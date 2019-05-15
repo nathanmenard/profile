@@ -1,5 +1,6 @@
 body {
-  background-color: #F7F9FC;
+  background-color: rgb(234, 234, 234);
+  margin: 0;
 }
 
 h1 {
@@ -20,6 +21,24 @@ p {
   color: #003049;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+#column1 {
+  text-align: right;
+  margin: 0 20px 0 0;
+}
+
+#column2 {
+  text-align: left;
+  margin: 0 0 0 20px;
+}
 .red-button {
   background-color: #f77f00; /* Green */
   border: none;
@@ -45,26 +64,32 @@ p {
 }
 
 .profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 0 20px 0
+  /*float: left;*/
+  width: 180px;
+  height: 180px;
+  /*border-radius: 50%;*/
+
 }
 
 .container {
-  width: 500px;   /* This sets the width */
+  width: auto;    This sets the width
   margin: 0 auto; /* This automatically sets left/right margins */
+  background-color: rgb(234, 234, 234);
 }
 
 .text-center {
   text-align: center;
 }
 .card {
+  background: rgb(234, 234, 234);
+  padding: 65x;
+  /*border-radius: 4px;*/
+  /*box-shadow: 0 10px 30px rgba(0,0,0,.1);*/
+  margin: 20px 0 40px 0;
+}
+
+#first-card {
   background: white;
-  padding: 30px;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  margin: 20px 0 0 0;
 }
 
 .list-inline {
@@ -86,21 +111,80 @@ p {
   color: #d62828;
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
+
+body, html {
+    height: 100%;
 }
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/postit.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+.hero-text h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white
+}
+
+.hero-text p {
+  color: white
+}
+
+#navigation-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navigation-bar li {
+  float: left;
+}
+
+#navigation-bar img {
+  height: 45px;
+}
+
+#navigation-bar li a {
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navigation-bar li a:hover {
+  background-color: #111;
+}
+
+/*
+#navigation-bar li {
+  border-right: 1px solid #bbb;
+}
+
+#navigation-bar li:last-child {
+  border-right: none;
+}
+*/

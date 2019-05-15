@@ -2,21 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <title>My profile</title>
-  <link href="https://fonts.googleapis.com/css?family=Kalam|Ubuntu:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i|Kalam|Ubuntu:300,400,700" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+   <ul id="navigation-bar">
+    <li><img src="images/artisanat_logo.png" alt="Jean-René"></li>
+    <li style="float:right"><a href="#news">News</a></li>
+    <li style="float:right"><a href="#contact">Contact</a></li>
+    <li style="float:right"><a href="#notre-histoire">Notre histoire</a></li>
+  </ul>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>"Computers are overrated, Post-It is the future."<br>
+      - Steve Jobs</h1>
+      <p>Le coding sur Post-It, un savoir faire unique au monde.</p>
+    </div>
+  </div>
 
   <div class="text-center container">
-    <div class="card">
-      <h1>Hello, I'm Jean-René 🔨</h1>
-      <h2 class = "motto">Artisan développeur de père en fils depuis 1990</h2>
-      <img class="profile-image" src="images/profile4.jpg" alt="Jean-René">
-      <div>
-        <a class = "red-button" href="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/07/11/11/harold-0.jpg">Demander un devis</a>
+    <div id="first-card">
+      <div class="row">
+        <div class="column" id ="column1">
+          <img class="profile-image" src="images/profile4.jpg" alt="Jean-René">
+        <!-- <img src="img_snow.jpg" alt="Snow" style="width:100%"> -->
+        </div>
+        <div class="column" id ="column2">
+          <h1>Meet Jean-René 🔨</h1>
+          <h2 class = "motto">Artisan développeur de père en fils depuis 1990</h2>
+          <div>
+            <a class = "red-button" href="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/07/11/11/harold-0.jpg">Demander un devis</a>
+          </div>
+        </div>
       </div>
     </div>
 
