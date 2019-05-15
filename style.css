@@ -1,0 +1,106 @@
+body {
+  background-color: #F7F9FC;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #d62828;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #d62828;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #003049;
+}
+
+.red-button {
+  background-color: #f77f00; /* Green */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.red-button:hover {
+  background-color: #d62828;
+}
+
+.motto {
+  font-family: 'Kalam', cursive;
+  margin: -20px 0px 0px 0px;
+  font-size: 20px;
+  color: #003049;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 0 20px 0
+}
+
+.container {
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+.text-center {
+  text-align: center;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin: 20px 0 0 0;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.social-icons {
+  font-size: 50px;
+  color: #f77f00;
+}
+
+.social-icons:hover {
+  color: #d62828;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
